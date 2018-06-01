@@ -11,12 +11,6 @@ function strip(bandName){
 
 
 // sorts the bands alphabetically - or numerically 
-const sortedBands = bands.sort(function(a, b){
- if (a > b){
- 	return 1;
- } else {
- 	return -1;
- }
-});
+const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);// ternerary operator );
 
-console.log(sortedBands)
+console.log(sortedBands);
