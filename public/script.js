@@ -13,4 +13,8 @@ function strip(bandName){
 // sorts the bands alphabetically - or numerically 
 const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);// ternerary operator );
 
+document.querySelector('#bands').innerHTML = 
+sortedBands
+	.map(band => `<li>${band}</li>`).join('');
+
 console.log(sortedBands);
