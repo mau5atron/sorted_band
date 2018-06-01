@@ -4,4 +4,16 @@ const bands = ['The Plot in You', 'The Devil Wears Prada',
  'Counterparts', 'Oh, Sleeper', 'A Skylit Drive',
  'Anywhere But Here', 'An Old Dog'];
 
- 
+
+
+
+// sorts the bands alphabetically - or numerically 
+const sortedBands = bands.sort(function(a, b){
+ if (a > b){
+ 	return 1;
+ } else {
+ 	return -1;
+ }
+});
+
+console.log(sortedBands)
